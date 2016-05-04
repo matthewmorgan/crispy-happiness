@@ -1,4 +1,6 @@
-Provisioning a new site=======================
+Provisioning a new site
+=======================
+
 ## Required packages:
 * nginx
 * Python 3
@@ -20,7 +22,7 @@ sudo pip3 install virtualenv
 
 ## Folder structure:
 Assume we have a user account at /home/username/home/username
-└── sites    
+└── sites
     └── SITENAME         
         ├── database         
         ├── source         
