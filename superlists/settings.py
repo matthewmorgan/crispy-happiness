@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+TEST_RUNNER = 'rainbowtests.test.runner.RainbowDiscoverRunner'
 
 # Application definition
 
