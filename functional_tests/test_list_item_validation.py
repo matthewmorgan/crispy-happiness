@@ -1,10 +1,13 @@
+from unittest import skip
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 from .base import FunctionalTest
 
 class ItemValidationTest(FunctionalTest):
-    
+
+    @skip
     def test_cannot_add_empty_list_items(self):
         # Edith goes to the home page and accidentally tries to submit
         # an empty list item.  She hits Enter on the empty input box
@@ -22,6 +25,7 @@ class ItemValidationTest(FunctionalTest):
 
         # Perversely, she now decides to submit a second blank list item
         self.browser.find_element_by_id('id_new_item').send_keys('\n')
+
 
         # She receives a similar warning on the list page
         self.check_for_row_in_list_table('1: Buy milk')
